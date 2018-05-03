@@ -1,0 +1,4 @@
+g++ -o bin/my_server  -g -Wall -rdynamic -ldl -I../include -I../include/librabbitmq -L../lib -L/usr/lib64 -ljson -lboost_thread-mt -lamqpcpp -lrabbitmq -lboost_signals-mt -lssl -lcrypto -lhiredis -lprotobuf 
+/usr/bin/ld: cannot open output file bin/my_server: No such file or directory
+collect2: ld returned 1 exit status
+make: *** [bin/my_server] Error 1
