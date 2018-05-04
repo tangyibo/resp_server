@@ -6,6 +6,10 @@
 
 class acceptor_server;
 struct respObject;
+
+/*
+ * 请求处理
+ */
 class service_handler : public ConnectionHandler
 {
 public:

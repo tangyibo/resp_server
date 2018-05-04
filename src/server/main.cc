@@ -9,7 +9,7 @@
 #include "db/kvdb.h"
 #include <signal.h>
 
-#define APP_NAME "rtdbserver"
+#define APP_NAME "respserver"
 #define APP_VERSION "v1.0.1"
 
 using namespace zsummer::log4z;
@@ -51,7 +51,7 @@ public:
     virtual void welcome()
     {
         fprintf(stderr, "%s %s\n", APP_NAME, APP_VERSION);
-        fprintf(stderr, "Copyright (c) 2012-2018 test\n");
+        fprintf(stderr, "Copyright (c) 2012-2018 respserver\n");
         fprintf(stderr, "\n");
     }
 
