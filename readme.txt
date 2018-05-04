@@ -5,7 +5,8 @@
  基于C++网络编程 reactor框架、leveldb和RESP协议实现的简单redis-server:
 
 二、依赖
- boost1.41+
+ 编译时依赖：boost1.41+
+ yum install boost
 
 三、编译
  make clean

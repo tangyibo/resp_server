@@ -4,8 +4,6 @@
     <df root="." name="0">
       <df name="bin">
       </df>
-      <df name="dbfiles">
-      </df>
       <df name="etc">
       </df>
       <df name="include">
@@ -27,10 +25,6 @@
         </df>
       </df>
       <df name="lib">
-      </df>
-      <df name="log">
-        <df name="2018_05">
-        </df>
       </df>
       <df name="src">
         <df name="base">
@@ -105,7 +99,6 @@
           <in>acceptor_server.cc</in>
           <in>acceptor_server.h</in>
           <in>main.cc</in>
-          <in>service_accetor.cpp</in>
           <in>service_accetor.h</in>
           <in>service_handler.cc</in>
           <in>service_handler.h</in>

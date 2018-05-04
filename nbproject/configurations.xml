@@ -38,7 +38,6 @@
           <in>thpool_service_loop.h</in>
         </df>
         <df name="server">
-          <in>service_accetor.cpp</in>
           <in>service_accetor.h</in>
           <in>service_handler.cc</in>
           <in>service_handler.h</in>
@@ -140,8 +139,6 @@
       <item path="src/net/thpool_service_loop.cc" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/net/thpool_service_loop.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/server/service_accetor.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/server/service_accetor.h" ex="false" tool="3" flavor2="0">
       </item>

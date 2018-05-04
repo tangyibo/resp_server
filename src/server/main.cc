@@ -76,7 +76,7 @@ public:
         
         SocketAddress endpoint(NULL, 6543);
         acceptor.start_thread_pool(4);
-        if (0 == acceptor.open(&endpoint))
+        if (0 == acceptor.open(endpoint))
         {
             loop.run();
         }

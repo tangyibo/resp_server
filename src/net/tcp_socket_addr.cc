@@ -22,9 +22,7 @@ SocketAddress::SocketAddress ( const char *ipaddr, unsigned short port )
     bzero(&addr_, sizeof (addr_));
     addr_.sin_family = AF_INET;
     addr_.sin_port = htons((short) port);
-    
-    if (ipaddr && ipaddr[0])
-        inet_pton(AF_INET, ipaddr, &addr_.sin_addr);
+    inet_pton(AF_INET, ipaddr, &addr_.sin_addr);
 }
 
 SocketAddress::SocketAddress ( const SocketAddress& other )
