@@ -3,44 +3,37 @@
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
       <df name="src">
-        <df name="base">
-          <in>executable_functor.h</in>
-          <in>member_thread.h</in>
-          <in>mutex_lock.cc</in>
-          <in>mutex_lock.h</in>
-          <in>singleton.h</in>
-          <in>threadid.h</in>
-        </df>
         <df name="client">
           <in>main.cc</in>
         </df>
         <df name="db">
-          <in>algorithm.cc</in>
-          <in>algorithm.h</in>
+          <in>algo.cc</in>
+          <in>kvdb.cc</in>
+        </df>
+        <df name="deps">
+          <df name="libresp">
+            <in>resp.c</in>
+          </df>
         </df>
         <df name="net">
-          <in>acceptor_handler.h</in>
-          <in>bytes_endian.h</in>
+          <in>async_acceptor.cc</in>
           <in>connection_handler.cc</in>
           <in>event_dispatcher.cc</in>
-          <in>event_handler.h</in>
-          <in>net_tcp_connection.h</in>
-          <in>reactor.cc</in>
-          <in>reactor.h</in>
+          <in>net_base.cc</in>
+          <in>service_loop.cc</in>
           <in>service_loop_thread.cc</in>
-          <in>service_loop_thread.h</in>
-          <in>socket_net.cc</in>
-          <in>socket_net.h</in>
-          <in>tcp_connector.h</in>
-          <in>tcp_socket.cc</in>
-          <in>tcp_socket.h</in>
+          <in>stream_buffer.cc</in>
+          <in>tcp_socket_addr.cc</in>
           <in>thpool_service_loop.cc</in>
-          <in>thpool_service_loop.h</in>
         </df>
         <df name="server">
-          <in>service_accetor.h</in>
+          <in>acceptor_server.cc</in>
+          <in>main.cc</in>
           <in>service_handler.cc</in>
-          <in>service_handler.h</in>
+        </df>
+        <df name="util">
+          <in>app.cc</in>
+          <in>log4z.cc</in>
         </df>
       </df>
     </df>
@@ -72,79 +65,61 @@
           <buildCommand>${MAKE} -f Makefile</buildCommand>
           <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
           <executablePath></executablePath>
+          <cTool>
+            <incDir>
+              <pElem>include</pElem>
+              <pElem>src</pElem>
+              <pElem>.</pElem>
+            </incDir>
+          </cTool>
+          <ccTool>
+            <incDir>
+              <pElem>include</pElem>
+              <pElem>src</pElem>
+              <pElem>.</pElem>
+            </incDir>
+          </ccTool>
         </makeTool>
         <preBuild>
           <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
           <preBuildCommand></preBuildCommand>
         </preBuild>
       </makefileType>
-      <folder path="0">
-        <ccTool>
-          <standard>4</standard>
-          <incDir>
-            <pElem>/usr/include/c++/4.4.4</pElem>
-            <pElem>/usr/include</pElem>
-            <pElem>src</pElem>
-          </incDir>
-        </ccTool>
-      </folder>
-      <item path="src/base/executable_functor.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/base/member_thread.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/base/mutex_lock.cc" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/base/mutex_lock.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/base/singleton.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/base/threadid.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/client/main.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/db/algorithm.cc" ex="false" tool="1" flavor2="0">
+      <item path="src/db/algo.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/db/algorithm.h" ex="false" tool="3" flavor2="0">
+      <item path="src/db/kvdb.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/net/acceptor_handler.h" ex="false" tool="3" flavor2="0">
+      <item path="src/deps/libresp/resp.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="src/net/bytes_endian.h" ex="false" tool="3" flavor2="0">
+      <item path="src/net/async_acceptor.cc" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/net/connection_handler.cc" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/net/event_dispatcher.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/net/event_handler.h" ex="false" tool="3" flavor2="0">
+      <item path="src/net/net_base.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/net/net_tcp_connection.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/net/reactor.cc" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/net/reactor.h" ex="false" tool="3" flavor2="0">
+      <item path="src/net/service_loop.cc" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/net/service_loop_thread.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/net/service_loop_thread.h" ex="false" tool="3" flavor2="0">
+      <item path="src/net/stream_buffer.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/net/socket_net.cc" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/net/socket_net.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/net/tcp_connector.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/net/tcp_socket.cc" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/net/tcp_socket.h" ex="false" tool="3" flavor2="0">
+      <item path="src/net/tcp_socket_addr.cc" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/net/thpool_service_loop.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/net/thpool_service_loop.h" ex="false" tool="3" flavor2="0">
+      <item path="src/server/acceptor_server.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/server/service_accetor.h" ex="false" tool="3" flavor2="0">
+      <item path="src/server/main.cc" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/server/service_handler.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/server/service_handler.h" ex="false" tool="3" flavor2="0">
+      <item path="src/util/app.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/util/log4z.cc" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

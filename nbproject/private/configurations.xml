@@ -28,14 +28,11 @@
       </df>
       <df name="src">
         <df name="base">
-          <in>executable_functor.h</in>
-          <in>member_thread.h</in>
-          <in>mutex_lock.cc</in>
+          <in>functor.h</in>
           <in>mutex_lock.h</in>
           <in>posix_thread.h</in>
           <in>singleton.h</in>
           <in>thread_queue.h</in>
-          <in>threadid.h</in>
         </df>
         <df name="client">
           <in>main.cc</in>
@@ -43,8 +40,6 @@
         <df name="db">
           <in>algo.cc</in>
           <in>algo.h</in>
-          <in>algorithm.cc</in>
-          <in>algorithm.h</in>
           <in>kvdb.cc</in>
           <in>kvdb.h</in>
           <in>serialize.h</in>
@@ -65,7 +60,6 @@
             <in>poll.cc</in>
             <in>select.cc</in>
           </df>
-          <in>acceptor_handler.h</in>
           <in>async_acceptor.cc</in>
           <in>async_acceptor.h</in>
           <in>bytes_endian.h</in>
@@ -76,30 +70,23 @@
           <in>event_handler.h</in>
           <in>net_base.cc</in>
           <in>net_base.h</in>
-          <in>net_tcp_connection.h</in>
-          <in>reactor.cc</in>
-          <in>reactor.h</in>
           <in>service_loop.cc</in>
           <in>service_loop.h</in>
           <in>service_loop_thread.cc</in>
           <in>service_loop_thread.h</in>
-          <in>socket_net.cc</in>
-          <in>socket_net.h</in>
           <in>stream_buffer.cc</in>
           <in>stream_buffer.h</in>
-          <in>tcp_connector.h</in>
-          <in>tcp_socket.cc</in>
-          <in>tcp_socket.h</in>
           <in>tcp_socket_addr.cc</in>
           <in>tcp_socket_addr.h</in>
           <in>thpool_service_loop.cc</in>
           <in>thpool_service_loop.h</in>
+          <in>timer_handler.cc</in>
+          <in>timer_handler.h</in>
         </df>
         <df name="server">
           <in>acceptor_server.cc</in>
           <in>acceptor_server.h</in>
           <in>main.cc</in>
-          <in>service_accetor.h</in>
           <in>service_handler.cc</in>
           <in>service_handler.h</in>
         </df>
@@ -120,7 +107,7 @@
     <conf name="Default" type="0">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
-        <platform>3</platform>
+        <platform>2</platform>
       </toolsSet>
       <compile>
         <compiledirpicklist>
